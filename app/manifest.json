@@ -1,0 +1,24 @@
+{
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzcp66xi1ctUL0HvndH7IyjNw2CM9TdOMx8XPv0GbQXFmzm3xnqwQkbRYyfNoYN+pIIY0/TRu7qYOAnb0sogEqQRU73sbSAJajPbCxxBTVFueTypQtBpN5uuV/Z/Ox4myMiRVqcfLxDaVLFkVa3f9OGMhWJclDa74eIrwqc81GJQM8TG0JvZMSwE3u8FzH+d8U+x2p/f7a4546BNpP9Ssv2Jc/kE2KV5DIQS++8rg04aHnW3TZX2aUd1Bz+c416hmqxEb4iARGXhg7iURh6KIe9+490imIcXaedhUwWRiqnuJ3Kbkzl/iOSUI2XzIOHxGnkAGmLf9tfsrhKLcwtvvqQIDAQAB",
+  "name": "url_checker",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Send a message to a native application.",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "tabs",
+    "nativeMessaging"
+  ],
+  "background":{
+    "scripts":["main.js"],
+    "persistent": true
+    
+  },
+  "browser_action" : {
+    "default_popup" : "popup.html"
+  }
+}
